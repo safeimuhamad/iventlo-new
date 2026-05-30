@@ -1,0 +1,194 @@
+/***====================================================================
+    Clients Section CSS
+====================================================================***/
+
+.client-section{
+    position: relative;
+    padding: 120px 0;
+    .sec-title {
+        margin-bottom: 40px;
+        .text {
+            padding-right: 50px;
+            @include media-breakpoint-down(xl){
+                padding-right: 0;
+            }
+            .rtl & { 
+                padding-right: 0;
+                padding-left: 50px;
+                @include media-breakpoint-down(xl){
+                    padding-left: 0;
+                }  
+            }
+        }
+    }
+    .content-column {
+        @include media-breakpoint-down(xl){
+            margin-bottom: 50px;
+        }
+        .inner-column {
+            @include media-breakpoint-down(xl){
+                text-align: center;
+            }
+            .sec-title {
+                @include media-breakpoint-down(xl){
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .sponsors-column {
+        .inner-column {
+            display: flex;
+            align-items: start;
+            justify-content: flex-end;
+            @include media-breakpoint-down(md){
+                flex-direction: column;
+            }
+            .blocks-outer-box {
+                @include media-breakpoint-down(xl){
+                    width: 33.3333333%;
+                }
+                @include media-breakpoint-down(md){
+                    display: none;
+                }
+                &.show-md {
+                    display: none;
+                    @include media-breakpoint-down(md){
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.client-block {
+    @include media-breakpoint-down(md){
+        width: 50%;
+    }
+    .inner-box {
+        position: relative;
+        overflow: hidden;
+        width: 272px;
+        height: 132px;
+        @include flex-center;
+        padding: 15px;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        @include media-breakpoint-down(xl){
+            width: 100%;
+        }
+        .dark-layout & {
+            background-color: var(--dark-layout-color);
+            box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25);
+        }
+        .image{
+            margin-bottom: 0;
+            @include media-breakpoint-down(md){
+                width: 140px;
+            }
+            &:hover{
+                img {
+                    &:first-child{
+                        transform: translateY(0) scaleY(1);
+                        opacity: 1;
+                        filter: blur(0);
+                    }
+                    &:nth-child(2){
+                        transform: translateY(-50%) scaleY(2);
+                        opacity: 0;
+                        filter: blur(10px);
+                    }
+                }
+            }
+            img{
+                position:relative;
+                width: auto !important;
+                display: inline-block !important;
+                @include transition(all 500ms ease);
+                &:first-child{
+                    position:absolute;
+                    left:0px;
+                    right:0px;
+                    top:0px;
+                    bottom:0px;
+                    z-index:1;
+                    margin: auto;
+                    transform: translateY(50%) scaleY(2);
+                    opacity: 0;
+                    filter: blur(10px);
+                }
+            }
+        }
+    }
+}
+
+/***====================================================================
+    Clients Section
+====================================================================***/
+
+.client-section-two {
+    position: relative;
+    padding: 120px 0;
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include background;
+    }
+    .client-block-two.empty {
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
+    }
+}
+
+.client-block-two {
+    .inner-box {
+        position: relative;
+        .image{
+            position: relative;
+            margin-bottom: 0;
+            border: 1px solid #BBBBBB;
+            height: 168px;
+            overflow: hidden;
+            @include flex-center;
+            text-align: center;
+            background-color: var(--theme-color-light);
+            &:hover{
+                img {
+                    &:first-child{
+                        transform: translateY(0) scaleY(1);
+                        opacity: 1;
+                        filter: blur(0);
+                    }
+                    &:nth-child(2){
+                        transform: translateY(-50%) scaleY(2);
+                        opacity: 0;
+                        filter: blur(10px);
+                    }
+                }
+            }
+            img{
+                position:relative;
+                width: auto !important;
+                display: inline-block !important;
+                @include transition(all 500ms ease);
+                &:first-child{
+                    position:absolute;
+                    left:0px;
+                    right:0px;
+                    top:0px;
+                    bottom:0px;
+                    z-index:1;
+                    margin: auto;
+                    transform: translateY(50%) scaleY(2);
+                    opacity: 0;
+                    filter: blur(10px);
+                }
+            }
+        }
+    }
+}

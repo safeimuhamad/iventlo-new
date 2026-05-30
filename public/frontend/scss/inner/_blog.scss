@@ -1,0 +1,96 @@
+/***====================================================================
+    Blog Section CSS
+====================================================================***/
+
+.blog-section {
+    position: relative;
+    padding: 120px 0;
+
+    .content-column {
+        @include media-breakpoint-down(xl){
+            margin-bottom: 50px;
+        }
+    }
+
+    .news-single-block {
+        .title a:hover {
+            color: var(--theme-color3);
+        }
+    }
+}
+
+.styled-pagination {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    &.align-left {
+        justify-content: flex-start;
+    }
+    li {
+        position: relative;
+        margin: 0 10px 10px 0;
+        &:last-child {
+            margin-right: 0;
+        }
+        .rtl & {
+            &:first-child {
+                margin-right: 0;
+            }
+            &:last-child {
+                margin-right: 10px;
+            }
+        }
+        a {
+            position: relative;
+            display: block;
+            font-size: 16px;
+            height: 60px;
+            width: 60px;
+            color: #666666;
+            font-weight: 400;
+            @include flex-center;
+            border-radius: 50%;
+            border: 1px solid #666666;
+            background: transparent;
+            @include transition(all 300ms ease);
+            @include media-breakpoint-down(sm){
+                width: 50px;
+                height: 50px;
+            }
+            &:hover,
+            &.active {
+                color: var(--theme-color-light);
+                background-color: var(--theme-color4);
+                border-color: var(--theme-color4);
+            }
+            .dark-layout & {
+                color: var(--theme-color-light);
+                border-color: var(--theme-color-light);
+                background-color: var(--dark-layout-two);
+                &:hover,
+                &.active {
+                    color: var(--theme-color-light);
+                    background-color: var(--theme-color4);
+                    border-color: var(--theme-color4);
+                }
+            }
+        }
+        .arrow {
+            font-size: 18px;
+            color: var(--theme-color-light);
+            background-color: var(--theme-color3);
+            border-color: var(--theme-color3);
+            .rtl & {
+                transform: scaleX(-1);
+            }
+            .dark-layout & {
+                color: var(--theme-color-light);
+                background-color: var(--theme-color3);
+                border-color: var(--theme-color3);
+            }
+        }
+    }
+}

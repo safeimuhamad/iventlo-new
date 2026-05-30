@@ -1,0 +1,76 @@
+/***====================================================================
+# Global Variables CSS
+====================================================================***/
+:root {
+  //theme color
+  --theme-color-light: #ffffff;
+  --theme-color-dark: #000000;
+  
+  --theme-color1: #D51C55;
+  --theme-color2: #F4E412;
+  --theme-color3: #9914CB;
+  --theme-color4: #ED5F00;
+  
+  //text heading color
+  --text-color:         #666666;
+  --dark-layout-color:         #121212;
+  --dark-layout-color-two:         #333333;
+  --headings-color:     var(--theme-color-dark);
+  --link-color:         var(--theme-color-dark);
+  --link-hover-color:   var(--theme-color-dark);
+
+
+  //font family
+  --title-font: 'Instrument Sans', sans-serif;
+  --text-font: 'Inter', sans-serif;
+  
+  //body
+  --body-font-size:   16px;
+  --body-line-height: 30px;
+  --body-font-weight: 400;
+
+  //heading font size + weight
+  --line-height-heading-h1: 1.1em;
+  --line-height-heading: 1.2em;
+  --line-height-heading-small: 1.4em;
+
+  --h1-font-size: 128px;
+  --h2-font-size: 64px;
+  --h3-font-size: 32px;
+  --h4-font-size: 24px;
+  --h5-font-size: 20px;
+  --h6-font-size: 18px;
+
+  --h1-font-weight: 700;
+  --h2-font-weight: 700;
+  --h3-font-weight: 700;
+  --h4-font-weight: 700;
+  --h5-font-weight: 700;
+  --h6-font-weight: 500;
+
+  //section sub title
+  --sec-title-subtitle-color:       var(--theme-color1);
+  --sec-title-subtitle-font-size:   16px;
+  --sec-title-subtitle-font-family: var(--title-font);
+  --sec-title-subtitle-font-weight: 700;
+  --sec-title-subtitle-line-height: 24px;
+
+  //section title
+  --sec-title-color:        var(--theme-color-dark);
+  --sec-title-font-size:    var(--h2-font-size);
+  --sec-title-font-family:  var(--title-font);
+  --sec-title-font-weight:  var(--h2-font-weight);
+
+  //news details page
+  --theme-light-background: #ffffff;
+  --theme-light-background-text-color: var(--headings-color);
+  --theme-black:        #000000;
+
+
+  //container
+  --container-width: 1320px;
+  --small-container-width: 1050px;
+  --large-container-width: 1640px;
+  --container-pt:    120px;
+  --container-pb:    120px;
+}

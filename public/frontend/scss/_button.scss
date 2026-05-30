@@ -1,0 +1,120 @@
+.theme-btn{
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    gap: 10px;
+    @include transition(all 300ms ease);
+    .btn-title {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/*Btn Style One*/
+.btn-style-one {
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 41px;
+    border-radius: 50px;
+    font-weight: 700;
+    overflow: hidden;
+    color: var(--theme-color-light);
+    background-color: var(--theme-color1);
+    text-transform: uppercase;
+    @include media-breakpoint-down(sm){
+        padding: 18px 30px;
+        font-size: 12px;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        border-radius: 50px;
+        height: 100%;
+        background-color: var(--theme-color2);
+        @include transition(all 300ms ease);
+    }
+    i{
+        position: relative;
+        top: 1px;
+        display: block;
+    }
+    &:hover {
+        color: var(--theme-color-dark);
+        &:before{
+            width: 100%;
+            right: auto;
+            left: 0;
+        }
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+
+    .icon {
+        position: relative;
+        border-radius: 28.5px;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        @include flex-center;
+        color: var(--theme-color1);
+        background-color: var(--theme-color-light);
+        z-index: 1;
+    }
+    &.icon-btn {
+        gap: 16px;
+        line-height: 14px;
+        padding: 9px 27px 10px 9px;
+        .rtl & {
+            padding: 9px 9px 10px 27px;
+        }
+    }
+
+    &.bg-yellow {
+        background-color: var(--theme-color2);
+        color: var(--theme-color-dark);
+        &::before{background-color: var(--theme-color1);}
+        &:hover {color: var(--theme-color-light);}
+    }
+    &.bg-pink {
+        background-color: var(--theme-color3);
+        &::before{background-color: var(--theme-color1);}
+        &:hover {color: var(--theme-color-light);}
+    }
+    &.bg-blue {
+        background-color: #200066;
+        &::before{background-color: var(--theme-color1);}
+        &:hover {color: var(--theme-color-light);}
+    }
+    &.bg-orange {
+        background-color: var(--theme-color4);
+        &::before{background-color: var(--theme-color1);}
+        &:hover {color: var(--theme-color-light);}
+    }
+    &.dark-bg{
+        color: var(--theme-color-light);
+        background-color: #212729;
+        &::before{background-color: var(--theme-color1);}
+    }
+    &.light-bg{
+        color: var(--theme-color-dark);
+        background: var(--theme-color-light);
+        &::before{background: var(--theme-color1);}
+        &:hover{color: var(--theme-color-light);}
+    }
+    &.hover-light{
+        &:hover{color: var(--theme-color-dark);}
+        &:before{background-color: var(--theme-color-light);}
+    }
+    &.hover-dark{
+        &:hover{color: var(--theme-color-light);}
+        &:before{background-color: var(--theme-color-dark);}
+    }
+}

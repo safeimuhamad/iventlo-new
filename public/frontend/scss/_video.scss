@@ -1,0 +1,367 @@
+/***====================================================================
+    Video Section CSS
+====================================================================***/
+
+.video-section{
+    position: relative;
+    z-index: 2;
+    padding: 220px 0 175px;
+    @include media-breakpoint-down(lg){
+        padding: 120px 0;
+    }
+    .icon-two {
+        position: absolute;
+        top: 106px;
+        right: 160px;
+        z-index: 1;
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
+        .rtl & {
+            right: auto;
+            left: 160px;
+        }
+    }
+    .bg-image {
+        background-attachment: fixed;
+    }
+    .sec-title {
+        h2 {
+            font-size: 84px;
+            @include media-breakpoint-down(xl){
+                font-size: 64px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 40px;
+            }
+        }
+    }
+    .video-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 188px;
+        height: 188px;
+        @include flex-center;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: rgb(0,0,0,0.30);
+        @include media-breakpoint-down(xl){
+            margin-top: -30px;
+            margin-left: -100px;
+        }
+        @include media-breakpoint-down(lg){
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0%);
+            margin-left: 0;
+            margin-top: 50px;
+        }
+        .rtl & {
+            @include media-breakpoint-down(xl){
+                margin-right: -100px;
+                margin-left: auto;
+            }
+            @include media-breakpoint-down(lg){
+                margin-right: 0;
+            }   
+        }
+
+        .circular-text {
+            position: relative;
+            fill: currentColor;
+            height: auto;
+            transform-origin: center;
+            width: 195px;
+            height: 195px;
+            animation: fa-spin 30s infinite linear;
+            .rtl & {
+                direction: ltr;
+            }
+            @include media-breakpoint-down(sm){
+                top: -3px;
+                left: -3px;
+            }
+            text {
+                position: relative;
+                font-size: 7px;
+                font-weight: 700;
+                letter-spacing: 3.3px;
+                font-family: var(--text-font);
+                color: var(--theme-color-light);
+                text-transform: uppercase;
+            }
+        }
+
+        .play-now {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 127px;
+            height: 127px;
+            font-size: 40px;
+            color: var(--theme-color-dark);
+            border-radius: 50%;
+            @include flex-center;
+            background-color: var(--theme-color2);
+            transform: translate(-50%, -50%);
+            &:hover {
+                color: var(--theme-color-light);
+                background-color: var(--theme-color1);
+            }
+        }
+    }
+    .content-column {
+        .inner-column {
+            margin-left: -120px;
+            @include media-breakpoint-down(xxl){
+                margin-left: 0;
+            }
+            @include media-breakpoint-down(xl){
+                padding-left: 30px;
+            }
+            @include media-breakpoint-down(lg){
+                text-align: center;
+                padding-left: 0;
+            }
+            .rtl & {
+                margin-left: 0;
+                margin-right: -120px;
+                @include media-breakpoint-down(xxl){
+                    margin-right: 0;
+                }
+                @include media-breakpoint-down(xl){
+                    padding-right: 30px;
+                    padding-left: 0;
+                }
+                @include media-breakpoint-down(lg){
+                    padding-right: 0;
+                }
+            }
+            .video-box.show-lg {
+                display: none;
+                @include media-breakpoint-down(lg){
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .image-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include media-breakpoint-down(lg){
+            position: relative;
+        }
+        .rtl & {
+            text-align: right;
+            transform: scaleX(-1);
+            left: auto;
+            right: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        .image-outer {
+            position: relative;
+            .image {
+                margin-bottom: 0;
+                overflow: hidden;
+                border-radius: 0 50% 50% 50%;;
+                border: 20px solid var(--theme-color2);
+                border-left: 0;
+                border-top: 0;
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                @include media-breakpoint-down(lg){
+                    display: none;
+                }
+                @include for-xxl{
+                    width: 85%;
+                }
+                @include media-breakpoint-down(xxl){
+                    width: 80%;
+                }
+                @include media-breakpoint-down(xl){
+                    width: 70%;
+                }
+            }
+            .shape-fourtyeight {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .video-box {
+            @include media-breakpoint-down(lg){
+                display: none;
+            }
+        }
+    }
+}
+
+/***====================================================================
+    Video Section Two
+====================================================================***/
+
+.video-section-two {
+    position: relative;
+    z-index: 2;
+    padding: 120px 0;
+    .outer-box {
+        position: relative;
+        @include media-breakpoint-down(sm){
+            padding-bottom: 100px;
+        }
+        .auto-container{
+            position: relative;
+        }
+        .icon-ten {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            display: none;
+            @include media-breakpoint-down(md){display: none;}
+            .rtl & {
+                left: auto;
+                right: 0;
+                transform: scaleX(-1);
+            }
+            .dark-layout & {
+                display: none;
+            }
+        }
+        .icon-eleven {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+            display: none;
+            @include media-breakpoint-down(md){display: none;}
+            .rtl & {
+                left: 0;
+                right: auto;
+                transform: scaleX(-1);
+            }
+            .dark-layout & {
+                display: none;
+            }
+        }
+        .bg-image {
+            overflow: hidden;
+            &:before {
+                content: "";
+                @include overlay;
+                @include background;
+                background-image: url(../images/icons/pattern-3.png);
+            }
+        }
+        .btn-box {
+            position: absolute;
+            top: 83px;
+            right: 84px;
+            z-index: 4;
+            @include media-breakpoint-down(md){
+                top: 50px;
+                right: 50px;
+            }
+            .rtl & {
+                right: auto;
+                left: 84px;
+                @include media-breakpoint-down(md){
+                    left: 50px;
+                }
+            }
+            &.show-sm {
+                display: none;
+                @include media-breakpoint-down(sm){
+                    display: block;
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    text-align: center;
+                }
+                .rtl & {
+                    @include media-breakpoint-down(sm){
+                        right: auto;
+                        left: 0;
+                    }   
+                }
+            }
+            &.hide-sm {
+                display: block;
+                @include media-breakpoint-down(sm){
+                    display: none;
+                }
+            }
+            .play-icon {
+                position: relative;
+                top: 2px;
+                left: 5px;
+                z-index: 1;
+            }
+            .play-now {
+                position: relative;
+                width: 123px;
+                height: 123px;
+                @include flex-center;
+                border-radius: 50%;
+                border: 6px solid var(--theme-color-light);
+                background: radial-gradient(circle, #4E26FF 0%, #0B00A4 100%);
+                @include transition(all 300ms ease);
+                &:hover {
+                    transform: scale(1.1);
+                }
+                @include media-breakpoint-down(sm){
+                    margin: 0 auto;
+                }
+            }
+            .play-now .ripple,
+            .play-now .ripple:before,
+            .play-now .ripple:after {
+                width: 123px;
+                height: 123px;
+            }
+        }
+        .content-box {
+            position: relative;
+            padding: 390px 100px 85px;
+            @include media-breakpoint-down(xl){
+                padding: 350px 50px 70px;
+            }
+            @include media-breakpoint-down(sm){
+                padding: 100px 20px 50px;
+                text-align: center;
+            }
+            .sub-title {
+                font-weight: 500;
+                color: var(--theme-color-light);
+                @include media-breakpoint-down(sm){
+                    font-size: 16px;
+                }
+            }
+            .title {
+                color: var(--theme-color-light);
+                margin-bottom: 0;
+                @include media-breakpoint-down(xl){
+                    font-size: 56px;
+                }
+                @include media-breakpoint-down(lg){
+                    font-size: 50px;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 40px;
+                }
+                @include media-breakpoint-down(sm){
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}

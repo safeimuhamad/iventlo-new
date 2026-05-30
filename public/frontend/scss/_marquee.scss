@@ -1,0 +1,152 @@
+
+/***
+
+====================================================================
+    Marquee Section CSS
+====================================================================***/
+
+.marquee-section {
+    position: relative;
+    padding: 20px 0 60px;
+    .text {
+        position: relative;
+        @include transition(all 300ms ease);
+        &:hover {
+            color: var(--theme-color1);
+        }
+    }
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    .rtl & {
+        direction: ltr;
+    }
+    &:hover .marquee {
+        animation-play-state: paused;
+    }
+    .marquee {
+        display: flex;
+        white-space: nowrap;
+        animation: marquee 50s linear infinite;
+        .text {
+            position: relative;
+            color: #dddddd;
+            font-size: 130px;
+            font-weight: 700;
+            line-height: 1em;
+            padding: 0 30px;
+            text-transform: uppercase;
+            &:hover {
+                color: var(--theme-color1);
+            }
+            @include media-breakpoint-down(lg){
+                font-size: 80px;
+                padding: 0 20px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 40px;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/***
+
+====================================================================
+    Marquee Section Two
+====================================================================***/
+
+.marquee-section-two {
+    position: relative;
+    padding: 10px 0 120px;
+    @include media-breakpoint-down(lg){
+        padding-top: 0;
+    }
+    @include media-breakpoint-down(sm){
+        padding-bottom: 80px;
+    }
+    .marquee-container {
+        .text {
+            font-family: var(--title-font);
+            font-size: 130px;
+            line-height: 1em;
+            @include transition(all 300ms ease);
+            @include media-breakpoint-down(lg){
+                font-size: 100px;
+            }
+            @include media-breakpoint-down(md){
+                font-size: 60px;
+            }
+            &.bold {
+                font-weight: 700;
+                color: var(--theme-color-dark);
+                .dark-layout & {
+                    color: var(--theme-color-light);
+                }
+                &:hover {
+                    color: var(--theme-color1);
+                }
+            }
+            &.light {
+                color: #DDDDDD;
+                .dark-layout & {
+                    color: var(--theme-color-light);
+                }
+                &:hover {
+                    color: var(--theme-color1);
+                }
+            }
+            &.text-border {
+                color: var(--theme-color-light);
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                 .dark-layout & {
+                    color: #fff;
+                    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+                }
+                &:hover {
+                    color: var(--theme-color-dark);
+                }
+            }
+            &.dot {
+                color: #dddddd !important;
+            }
+        }
+    }
+}
+
+/***
+
+====================================================================
+    Marquee Section Three
+====================================================================***/
+
+.marquee-section-three {
+    position: relative;
+    padding: 34px 0;
+    background-color: #150036;
+    .marquee-container {
+        .text {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1em;
+            color: var(--theme-color-light);
+            @include transition(all 300ms ease);
+            @include media-breakpoint-down(sm){
+                font-size: 22px;
+            }
+        }
+    }
+}

@@ -1,0 +1,200 @@
+/***====================================================================
+    Contact Section CSS
+====================================================================***/
+
+.contact-section {
+    position: relative;
+    padding: 120px 0 70px;
+
+    .content-column {
+        margin-bottom: 50px;
+        .inner-column {
+            position: relative;
+        }
+    }
+
+    .form-column {
+        margin-bottom: 50px;
+        .inner-column {
+            position: relative;
+        }
+    }
+}
+
+.contact-form {
+    position: relative;
+    padding: 50px 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--theme-color-light);
+    @include media-breakpoint-down(md){
+        padding: 50px 30px;
+    }
+    @include media-breakpoint-down(sm){
+        padding: 30px 15px;
+    }
+    .dark-layout & {
+        background-color: var(--dark-layout-color-two);
+    }
+    .form-group {
+        position: relative;
+        margin-bottom: 20px;
+        @include media-breakpoint-down(sm){
+            margin-bottom: 15px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .select2-container--default .select2-selection--single,
+        input:not([type="submit"]),
+        textarea,
+        select {
+            position: relative;
+            display: block;
+            height: 60px;
+            width: 100%;
+            line-height: 22px;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.6);
+            padding: 15px 24px;
+            margin-bottom: 0;
+            border: 1px solid #ccc;
+            @include transition(all 300ms ease);
+			&::placeholder {
+                color: rgba(0, 0, 0, 0.6);
+			}
+            @include media-breakpoint-down(sm){
+                height: 55px;
+                padding: 15px 18px;
+            }
+            .dark-layout & {
+                background-color: var(--dark-layout-color-two);
+                color: var(--theme-color-light);
+                &::placeholder {
+                    color: var(--theme-color-light);
+                }
+            }
+        }
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: var(--theme-color1);
+        }
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+    }
+}
+
+
+.contact-form label.error{
+    display:block;
+    font-weight:500;
+    font-size:13px;
+    text-transform:capitalize;
+    line-height:24px;
+    color:#ff0000;
+    padding-top:7px;
+    margin-bottom: 0;
+  }
+  
+  
+  form .response{
+    position: relative;
+    text-align: center;
+  }
+  
+  form .response .success{
+    background: #1ca345;
+    color: #ffffff;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  
+  form .response .failed{
+    background-color: #de3f44;
+    color: #ffffff;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  
+  form .response .text-info{
+    background-color: #ffc001 !important;
+    color: #222222 !important;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+.contact-list-four {
+    position: relative;
+    padding: 50px 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--theme-color-light);
+    @include media-breakpoint-down(md){
+        padding: 50px 30px;
+    }
+    @include media-breakpoint-down(sm){
+        padding: 30px 15px;
+    }
+    .dark-layout & {
+        background-color: var(--dark-layout-color-two);
+    }
+    li {
+        position: relative;
+        padding-left: 80px;
+        margin-bottom: 45px;
+        &:last-child {margin-bottom: 0;}
+        @include media-breakpoint-down(sm){
+            padding-left: 65px;
+            margin-bottom: 35px;
+        }
+        .rtl & {
+            padding-left: 0;
+            padding-right: 80px;
+            @include media-breakpoint-down(sm){
+                padding-right: 65px;
+            }
+        }
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 55px;
+            height: 55px;
+            @include media-breakpoint-down(sm){
+                width: 45px;
+                height: 45px;
+            }
+            .rtl & {
+                left: auto;
+                right: 0;
+            }
+        }
+        .title {
+            position: relative;
+            margin-bottom: 5px;
+            @include media-breakpoint-down(sm){
+                font-size: 20px;
+            }
+        }
+        .text {
+            position: relative;
+            margin-bottom: 0;
+            a:hover {
+                color: var(--theme-color1);
+            }
+            .dark-layout & {
+                color: var(--theme-color-light);
+            }
+            a {
+                .dark-layout & {
+                    color: var(--theme-color-light);
+                    &:hover {
+                        color: var(--theme-color1);
+                    }
+                }
+            }
+        }
+    }
+}

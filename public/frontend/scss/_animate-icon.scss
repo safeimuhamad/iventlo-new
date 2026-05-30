@@ -1,0 +1,767 @@
+
+/***====================================================================
+  Anim Icons
+====================================================================***/
+
+.reveal {
+    position: relative;
+    display: inline-flex;
+    visibility: hidden;
+    overflow: hidden;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform-origin: left;
+    }   
+}
+
+
+.anim-icons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+[text-split] {
+    opacity: 0;
+}
+
+.word {
+    overflow: hidden;
+    margin-bottom: -0.1em;
+    transform-origin: bottom;
+}
+
+.anim-icons.full-width {
+    max-width: 100%;
+}
+
+.anim-icons .icon {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.banner-layer {
+    width: 964px;
+    height: 100%;
+    background-image: url(../images/icons/banner-layer.png);
+}
+
+.btn-bg {
+    width: 322px;
+    height: 100%;
+    background-image: url(../images/icons/btn-bg.png);
+}
+
+.testi-shape-one {
+    width: 109px;
+    height: 80px;
+    background-image: url(../images/icons/testi-shape-one.png);
+}
+
+.testi-shape-two {
+    width: 109px;
+    height: 80px;
+    background-image: url(../images/icons/testi-shape-two.png);
+}
+
+.icon-mic {
+    width: 80px;
+    height: 183px;
+    background-image: url(../images/icons/icon-mic.svg);
+}
+
+.icon-check {
+    width: 60px;
+    height: 51px;
+    background-image: url(../images/icons/check.png);
+    @include background;
+}
+
+.check-bg-one {
+    width: 54px;
+    height: 44px;
+    background-image: url(../images/icons/check-bg-one.png);
+    @include background;
+}
+
+.check-bg-two {
+    width: 54px;
+    height: 44px;
+    background-image: url(../images/icons/check-bg-two.png);
+    @include background;
+}
+
+.icon-check-three {
+    width: 37px;
+    height: 32px;
+    background-image: url(../images/icons/icon-check-three.png);
+    @include background;
+}
+
+.check-three-bg {
+    width: 28px;
+    height: 22px;
+    background-image: url(../images/icons/check-three-bg.png);
+    @include background;
+}
+
+.check-bg-three {
+    width: 54px;
+    height: 44px;
+    background-image: url(../images/icons/check-bg-three.png);
+    @include background;
+}
+.icon-check-two {
+    width: 38px;
+    height: 32px;
+    background-image: url(../images/icons/icon-check-two.png);
+    @include background;
+}
+
+.check-two-bg {
+    width: 37px;
+    height: 31px;
+    background-image: url(../images/icons/check-two-bg.png);
+    @include background;
+}
+
+.check-two-bg-two {
+    width: 37px;
+    height: 31px;
+    background-image: url(../images/icons/check-two-bg-two.png);
+    @include background;
+}
+
+.play-icon {
+    width: 45px;
+    height: 61px;
+    background-image: url(../images/icons/play-icon.png);
+}
+
+.icon-arrow {
+    width: 153px;
+    height: 128px;
+    background-image: url(../images/icons/icon-arrow.png);
+}
+
+.icon-star {
+    width: 75px;
+    height: 75px;
+    background-image: url(../images/icons/icon-star.png);
+}
+
+.icon-video {
+    width: 123px;
+    height: 123px;
+    background-image: url(../images/icons/icon-video.png);
+}
+
+.icon-one {
+    width: 97px;
+    height: 156px;
+    background-image: url(../images/icons/icon-one.png);
+}
+
+.icon-two {
+    width: 97px;
+    height: 156px;
+    background-image: url(../images/icons/icon-two.png);
+}
+
+.icon-three {
+    width: 189px;
+    height: 135px;
+    background-image: url(../images/icons/icon-three.png);
+}
+
+.icon-four {
+    width: 379px;
+    height: 455px;
+    background-image: url(../images/icons/icon-four.png);
+}
+
+.icon-five {
+    width: 70px;
+    height: 68px;
+    background-image: url(../images/icons/icon-five.png);
+}
+
+.icon-six {
+    width: 243px;
+    height: 243px;
+    background-image: url(../images/icons/icon-six.png);
+}
+
+.icon-seven {
+    width: 119px;
+    height: 124px;
+    background-image: url(../images/icons/icon-seven.png);
+}
+
+.icon-eight {
+    width: 119px;
+    height: 124px;
+    background-image: url(../images/icons/icon-eight.png);
+}
+
+.icon-nine {
+    width: 224px;
+    height: 224px;
+    background-image: url(../images/icons/icon-nine.png);
+}
+
+.icon-ten {
+    width: 235px;
+    height: 173px;
+    background-image: url(../images/icons/icon-ten.png);
+}
+
+.icon-eleven {
+    width: 235px;
+    height: 173px;
+    background-image: url(../images/icons/icon-eleven.png);
+}
+
+.icon-twelve {
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/icons/icon-twelve.png);
+}
+
+.icon-thirteen {
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/icons/icon-thirteen.png);
+}
+
+.icon-fourteen {
+    width: 318px;
+    height: 479px;
+    background-image: url(../images/icons/icon-fourteen.png);
+}
+
+.icon-fifteen {
+    width: 346px;
+    height: 387px;
+    background-image: url(../images/icons/icon-fifteen.png);
+}
+
+.icon-sixteen {
+    width: 449px;
+    height: 551px;
+    background-image: url(../images/icons/icon-sixteen.png);
+}
+
+.icon-seventeen {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/icons/icon-seventeen.png);
+}
+
+.icon-eighteen {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/icons/icon-eighteen.png);
+}
+
+.icon-nineteen {
+    width: 109px;
+    height: 80px;
+    background-image: url(../images/icons/icon-nineteen.png);
+}
+
+.icon-twenty {
+    width: 109px;
+    height: 80px;
+    background-image: url(../images/icons/icon-twenty.png);
+}
+
+.icon-twentyone {
+    width: 70px;
+    height: 68px;
+    background-image: url(../images/icons/icon-twentyone.png);
+}
+
+.icon-twentytwo {
+    width: 146px;
+    height: 108px;
+    background-image: url(../images/icons/icon-twentytwo.png);
+}
+
+.icon-twentythree {
+    width: 146px;
+    height: 108px;
+    background-image: url(../images/icons/icon-twentythree.png);
+}
+
+.icon-twentyfour {
+    width: 78px;
+    height: 65px;
+    background-image: url(../images/icons/icon-twentyfour.png);
+}
+
+.icon-twentyfive {
+    width: 130px;
+    height: 72px;
+    background-image: url(../images/icons/icon-twentyfive.png);
+}
+
+.icon-twentysix {
+    width: 130px;
+    height: 72px;
+    background-image: url(../images/icons/icon-twentysix.png);
+}
+
+.icon-twentyseven  {
+    width: 86px;
+    height: 51px;
+    background-image: url(../images/icons/icon-twentyseven.png);
+}
+
+.icon-twentyeight  {
+    width: 86px;
+    height: 51px;
+    background-image: url(../images/icons/icon-twentyeight.png);
+}
+
+.shape-one {
+    width: 317px;
+    height: 305px;
+    background-image: url(../images/icons/shape-one.png);
+}
+
+.shape-two {
+    width: 715px;
+    height: 762px;
+    background-image: url(../images/icons/shape-two.png);
+}
+
+.shape-three {
+    width: 688px;
+    height: 1156px;
+    background-image: url(../images/icons/shape-three.png);
+}
+
+.shape-four {
+    width: 364px;
+    height: 547px;
+    background-image: url(../images/icons/shape-four.png);
+}
+
+.shape-five {
+    width: 217px;
+    height: 428px;
+    background-image: url(../images/icons/shape-five.png);
+}
+
+.shape-six {
+    width: 627px;
+    height: 626px;
+    background-image: url(../images/icons/shape-six.png);
+}
+
+.shape-seven {
+    width: 627px;
+    height: 627px;
+    background-image: url(../images/icons/shape-seven.png);
+}
+
+.shape-eight {
+    width: 108px;
+    height: 100%;
+    background-image: url(../images/icons/shape-eight.png);
+}
+
+.shape-nine {
+    width: 474px;
+    height: 1051px;
+    background-image: url(../images/icons/shape-nine.png);
+}
+
+.shape-ten {
+    width: 156px;
+    height: 100%;
+    background-image: url(../images/icons/shape-ten.png);
+}
+
+.shape-eleven {
+    width: 161px;
+    height: 367px;
+    background-image: url(../images/icons/shape-eleven.png);
+}
+
+.shape-twelve {
+    width: 159px;
+    height: 367px;
+    background-image: url(../images/icons/shape-twelve.png);
+}
+
+.shape-thirteen {
+    width: 108px;
+    height: 100%;
+    background-image: url(../images/icons/shape-thirteen.png);
+}
+
+.shape-fourteen {
+    width: 506px;
+    height: 518px;
+    background-image: url(../images/icons/shape-fourteen.png);
+}
+
+.shape-fifteen {
+    width: 97px;
+    height: 100%;
+    background-image: url(../images/icons/shape-fifteen.png);
+}
+
+.shape-sixteen {
+    width: 196px;
+    height: 100%;
+    background-image: url(../images/icons/shape-sixteen.png);
+}
+
+.shape-seventeen {
+    width: 248px;
+    height: 100%;
+    background-image: url(../images/icons/shape-seventeen.png);
+}
+
+.shape-eighteen {
+    width: 406px;
+    height: 404px;
+    background-image: url(../images/icons/shape-eighteen.png);
+}
+
+.shape-nineteen {
+    width: 219px;
+    height: 507px;
+    background-image: url(../images/icons/shape-nineteen.png);
+}
+
+.shape-twenty {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/icons/shape-twenty.png);
+}
+
+.shape-twentyone {
+    width: 393px;
+    height: 662px;
+    background-image: url(../images/icons/shape-twentyone.png);
+}
+
+.shape-twentytwo {
+    width: 598px;
+    height: 515px;
+    background-image: url(../images/icons/shape-twentytwo.png);
+}
+
+.shape-twentythree {
+    width: 541px;
+    height: 503px;
+    background-image: url(../images/icons/shape-twentythree.png);
+}
+
+.shape-twentyfour {
+    width: 512px;
+    height: 518px;
+    background-image: url(../images/icons/shape-twentyfour.png);
+}
+
+.shape-twentyfive {
+    width: 434px;
+    height: 340px;
+    background-image: url(../images/icons/shape-twentyfive.png);
+}
+
+.shape-twentysix {
+    width: 301px;
+    height: 492px;
+    background-image: url(../images/icons/shape-twentysix.png);
+}
+
+.shape-twentyseven {
+    width: 237px;
+    height: 507px;
+    background-image: url(../images/icons/shape-twentyseven.png);
+}
+
+.shape-twentyeight {
+    width: 205px;
+    height: 121px;
+    background-image: url(../images/icons/shape-twentyeight.png);
+}
+
+.shape-twentynine {
+    width: 109px;
+    height: 80px;
+    background-image: url(../images/icons/shape-twentynine.png);
+}
+
+.shape-thirty {
+    width: 291px;
+    height: 100%;
+    background-image: url(../images/icons/shape-thirty.png);
+}
+
+.shape-thirtyone {
+    width: 291px;
+    height: 100%;
+    background-image: url(../images/icons/shape-thirtyone.png);
+}
+
+.shape-thirtytwo {
+    width: 234px;
+    height: 561px;
+    background-image: url(../images/icons/shape-thirtytwo.png);
+}
+
+.shape-thirtythree {
+    width: 224px;
+    height: 561px;
+    background-image: url(../images/icons/shape-thirtythree.png);
+}
+
+.shape-thirtyfour {
+    width: 434px;
+    height: 457px;
+    background-image: url(../images/icons/shape-thirtyfour.png);
+}
+
+.shape-thirtyfive {
+    width: 163px;
+    height: 163px;
+    background-image: url(../images/icons/shape-thirtyfive.png);
+}
+
+.shape-thirtysix {
+    width: 341px;
+    height: 430px;
+    background-image: url(../images/icons/shape-thirtysix.png);
+}
+
+.shape-thirtyseven {
+    width: 217px;
+    height: 434px;
+    background-image: url(../images/icons/shape-thirtyseven.png);
+}
+
+.shape-thirtyeight {
+    width: 1273px;
+    height: 1273px;
+    background-image: url(../images/icons/shape-thirtyeight.png);
+}
+
+.shape-thirtynine {
+    width: 273px;
+    height: 162px;
+    background-image: url(../images/icons/shape-thirtynine.png);
+}
+
+.shape-fourty {
+    width: 539px;
+    height: 518px;
+    background-image: url(../images/icons/shape-fourty.png);
+}
+
+.shape-fourtyone {
+    width: 348px;
+    height: 348px;
+    background-image: url(../images/icons/shape-fourtyone.png);
+}
+
+.shape-fourtytwo {
+    width: 348px;
+    height: 348px;
+    background-image: url(../images/icons/shape-fourtytwo.png);
+}
+
+.shape-fourtythree {
+    width: 348px;
+    height: 348px;
+    background-image: url(../images/icons/shape-fourtythree.png);
+}
+
+.shape-fourtyfour {
+    width: 348px;
+    height: 348px;
+    background-image: url(../images/icons/shape-fourtyfour.png);
+}
+
+.shape-fourtyfive {
+    width: 348px;
+    height: 348px;
+    background-image: url(../images/icons/shape-fourtyfive.png);
+}
+
+.shape-fourtysix {
+    width: 348px;
+    height: 348px;
+    background-image: url(../images/icons/shape-fourtysix.png);
+}
+
+.shape-fourtyseven {
+    width: 348px;
+    height: 348px;
+    background-image: url(../images/icons/shape-fourtyseven.png);
+}
+
+.bounce-y{
+    animation: bounce-y 10s infinite linear;
+}
+
+.bounce-x{
+    animation: bounce-x 10s infinite linear;
+}
+
+.zoom-one{
+    animation: zoom-one 10s infinite linear;
+}
+
+.zoom-two{
+    animation: zoom-two 5s infinite linear;
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-y {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-x {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoom-one {
+    0% {
+        transform: scale(.95);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(.95);
+    }
+}
+
+@keyframes zoom-two {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.overlay-anim {
+    position: relative;
+    &:after {
+        background: rgba(255, 255, 255, 0.3);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
+        opacity: 1;
+        z-index: 9;
+        pointer-events: none;
+    }
+    &:hover{
+        &:after {
+            height: 100%;
+            opacity: 0;
+            transition: all 400ms linear;
+        }
+    }   
+}
+
+
+// Animated Moving Circles
+
+.circle {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    left: -10px;
+    top: -10px;
+    border-radius: 100%;
+    z-index: 1;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+    @supports (mix-blend-mode: difference) {
+        background-color: white;
+        mix-blend-mode: difference;
+    }
+    @include for-md{
+        display: none !important;
+    }
+}
+
+.circle-follow {
+    position: fixed;
+    mix-blend-mode: difference;
+    width: 30px;
+    height: 30px;
+    left: -21px;
+    top: -21px;
+    border-radius: 100%;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+    @supports (mix-blend-mode: difference) {
+        border: 1px solid #fff;
+        mix-blend-mode: difference;
+    }
+    @include for-md {
+        display: none !important;
+    }
+}

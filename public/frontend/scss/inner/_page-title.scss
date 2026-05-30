@@ -1,0 +1,178 @@
+/***====================================================================
+    Page Title CSS
+====================================================================***/
+
+.page-title {
+    position: relative;
+    padding: 330px 0 50px;
+    border-radius: 0 0 40px 40px;
+    overflow: hidden;
+    @include background;
+    @include media-breakpoint-down(xl){
+        border-radius: 0;
+    }
+    @include media-breakpoint-down(lg){
+        padding: 300px 0 30px;
+    }
+    @include media-breakpoint-down(sm){
+        padding: 200px 0 100px;
+    }
+    .shape-thirtyfour {
+        position: absolute;
+        top: -124px;
+        left: -124px;
+        animation: fa-spin 30s infinite linear;
+        @include media-breakpoint-down(lg){
+            top: -180px;
+            left: -180px;
+        }
+        @include media-breakpoint-down(sm){display: none;}
+        .rtl & {
+            left: auto; 
+            right: -124px;
+            @include media-breakpoint-down(lg){
+                right: -180px;
+            }
+        }
+    }
+    .shape-thirtyfive {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        animation: fa-spin 30s infinite linear;
+        @include media-breakpoint-down(xxl){display: none;}
+        .rtl & {
+            left: 10px;
+            right: auto;
+        }
+    }
+    .shape-thirtysix {
+        position: absolute;
+        bottom: -25px;
+        right: 80px;
+        @include for-xxl{display: none;}
+        .rtl & {
+            right: auto;
+            left: 80px;
+        }
+    }
+    .shape-thirtyseven {
+        position: absolute;
+        bottom: -70px;
+        left: 280px;
+        z-index: 1;
+        @include for-xxl{left: 70px;}
+        @include media-breakpoint-down(xxl){
+            left: 20px;
+        }
+        @include media-breakpoint-down(xl){display: none;}
+        .rtl & {
+            left: auto;
+            right: 280px;
+            @include for-xxl{right: 70px;}
+            @include media-breakpoint-down(xxl){
+                right: 20px;
+            }
+        }
+    }
+    .inner-container {
+        padding-left: 220px;
+        @include media-breakpoint-down(xl){
+            padding-left: 0;
+        }
+        @include media-breakpoint-down(sm){
+            text-align: center;
+        }
+        .rtl & {
+            padding-left: 0;
+            padding-right: 220px;
+            @include media-breakpoint-down(xl){
+                padding-right: 0;
+            }
+        }
+        .title {
+            position: relative;
+            color: var(--theme-color-light);
+            margin-bottom: 130px;
+            @include media-breakpoint-down(lg){
+                font-size: 88px;
+            }
+            @include media-breakpoint-down(md){
+                font-size: 68px;
+                margin-bottom: 100px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+        }
+        .breadcrumb-marquee {
+            position: absolute;
+            left: 84px;
+            bottom: 10px;
+            display: flex;
+            white-space: nowrap;
+            gap: 50px;
+            animation: gallery-one 100s linear infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+            @include media-breakpoint-down(sm){
+                gap: 20px;
+            }
+            .title-two {
+                position: relative;
+                color: #250084;
+                text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+                opacity: 0.5;
+                font-size: var(--h1-font-size);
+                font-weight: var(--h1-font-weight);
+                line-height: var(--line-height-heading-h1);
+                white-space: nowrap;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                @include for-xxl{
+                    font-size: 120px;
+                }
+                @include media-breakpoint-down(xxl){
+                    font-size: 110px;
+                }
+                @include media-breakpoint-down(xl){
+                    font-size: 90px;
+                    left: 15px;
+                    bottom: 30px;
+                }
+                @include media-breakpoint-down(lg){
+                    font-size: 74px;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 58px;
+                }
+                @include media-breakpoint-down(sm){
+                    position: relative;
+                    left: 0;
+                    bottom: 0;
+                    font-size: 30px;
+                }
+                .rtl & {
+                    left: auto;
+                    right: 84px;
+                    @include media-breakpoint-down(xl){
+                        right: 15px;
+                    }
+                    @include media-breakpoint-down(sm){
+                        right: 0;
+                    }
+                }
+            }
+        }
+        @keyframes breadcrumb-marquee {
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}

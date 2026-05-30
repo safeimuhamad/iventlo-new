@@ -1,0 +1,525 @@
+/***====================================================================
+    Shop Single CSS
+====================================================================***/
+
+.shop-single-section {
+    position: relative;
+    padding: 120px 0;
+}
+
+.cart-section {
+	input.quantity-spinner {
+		line-height: 24px;
+		padding: 10px 15px !important;
+		height: 54px !important;
+		box-shadow: none !important;
+	}
+	.bootstrap-touchspin {
+		.input-group-btn-vertical {
+			>.btn {
+				padding: 13px 10px;
+				background: #f4f5f6;
+			}
+			i {
+				top: 1px;
+			}
+		}
+	}
+}
+
+.product-details {
+	.basic-details {
+		position: relative;
+		margin-bottom: 20px;
+		.details-header {
+			position: relative;
+			margin-bottom: 0px;
+			h2 {
+				margin-bottom: 8px;
+				@include media-breakpoint-down(sm){
+					font-size: 36px;
+				}
+				a {
+					color: var(--theme-color-dark);
+				}
+			}
+			.rating {
+				font-size: 16px;
+				margin-bottom: 25px;
+				display: inline-block;
+				span {
+					color: var(--theme-color3);
+				}
+				.fa {
+					display: inline-block;
+					margin-right: 1px;
+				}
+				.fa.light {
+					color: var(--theme-color-light);
+				}
+			}
+			.item-price {
+				position: relative;
+				font-size: 24px;
+				font-weight: 400;
+				color: var(--theme-color-dark);
+				line-height: 24px;
+				letter-spacing: 1px;
+				margin-bottom: 20px;
+				.dark-layout & {
+					color: var(--theme-color-light);
+				}
+			}
+		}
+		.text {
+			position: relative;
+			font-size: 14px;
+			line-height: 1.9em;
+			margin-bottom: 30px;
+			.dark-layout & {
+				color: var(--theme-color-light);
+			}
+		}
+		.availablity {
+			position: relative;
+			float: left;
+			padding-right: 40px;
+			line-height: 32px;
+			margin-bottom: 27px;
+			font-size: 13px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			color: var(--theme-color-light);
+			strong {
+				font-size: 14px;
+				letter-spacing: 2px;
+				color: var(--theme-color-light);
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
+		.other-options {
+			display: flex;
+			gap: 20px;
+		}
+		.item-quantity {
+			position: relative;
+			width: 120px;
+		}
+		.btns-box {
+			position: relative;
+		}
+		.quantity-spinner {
+			line-height: 24px;
+			width: 120px;
+			padding: 10px 15px !important;
+			height: 54px !important;
+			box-shadow: none !important;
+		}
+		.bootstrap-touchspin {
+			.input-group-btn-vertical {
+				>.btn {
+					padding: 13px 10px;
+					background: #f4f5f6;
+				}
+			}
+		}
+	}
+	.image-column {
+		.image-carousel {
+			background-color: var(--theme-color-light);
+			border-radius: 4px;
+		}
+		margin-bottom: 50px;
+		@include media-breakpoint-down(sm){
+			margin-bottom: 30px;
+		}
+		.image-box {
+			img {
+				position: relative;
+				display: block;
+				width: 100%;
+			}
+		}
+		.thumbs-carousel {
+			margin-top: 20px;
+			li {
+				background-color: var(--theme-color-light);
+				text-align: center;
+				padding: 0px 0px;
+				cursor: pointer;
+				img {
+					width: 100%;
+					display: inline-block;
+				}
+			}
+		}
+	}
+	
+	.shop-list{
+		position:relative;
+		margin-top:20px;
+		li{
+			position:relative;
+			font-size:14px;
+			margin-bottom:10px;
+			strong{
+				color:#222222;
+				font-size:16px;
+				margin-right:5px;
+				text-transform:uppercase;
+				.dark-layout & {
+					color: var(--theme-color-light);
+				}
+			}
+			a{
+				position:relative;
+				color:var(--theme-color3);
+				font-size:14px;
+				font-weight:700;
+				margin-top:0px;
+				display:inline-block;
+				text-transform:uppercase;
+			}
+		}
+	}
+	.info-column {
+		margin-bottom: 50px;
+	}
+	.bootstrap-touchspin {
+		.input-group-btn-vertical {
+			i {
+				top: 1px;
+			}
+		}
+	}
+}
+
+/*Add Review*/
+.shop-page {
+	.prod-tabs {
+		position: relative;
+		.tab-btns {
+			position: relative;
+			text-align: center;
+			margin-bottom: 40px;
+			.tab-btn {
+				position: relative;
+				display: block;
+				margin-right: 8px;
+				font-size: 16px;
+				background: none;
+				color: var(--theme-color-dark);
+				border: 1px solid #cccccc;
+				text-transform: capitalize;
+				font-weight: 400;
+				line-height: 24px;
+				cursor: pointer;
+				border-radius: 5px;
+				margin-bottom: 12px;
+				display: inline-block;
+				padding: 12px 40px 10px;
+				transition: all 500ms ease;
+				&:hover {
+					color: var(--theme-color-light);
+					background: var(--theme-color3);
+					border-color: var(--theme-color3);
+				}
+				.dark-layout & {
+					color: var(--theme-color-light);
+				}
+				@include media-breakpoint-down(sm){
+					width: 100%;
+				}
+			}
+			.tab-btn.active-btn {
+				color: var(--theme-color-light);
+				background: var(--theme-color3);
+				border-color: var(--theme-color3);
+			}
+		}
+		.tabs-content {
+			position: relative;
+			.tab {
+				position: relative;
+				display: none;
+				p {
+					font-size: 14px;
+					line-height: 2em;
+					color: var(--text-color);
+					margin-bottom: 20px;
+					.dark-layout & {
+						color: var(--theme-color-light);
+					}
+					&:last-child {
+						margin-bottom: 0px;
+					}
+				}
+				h3 {
+					margin-bottom: 15px;
+				}
+				h4 {
+					margin-bottom: 15px;
+					font-size: 16px;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+				h5 {
+					margin-bottom: 15px;
+				}
+				h6 {
+					margin-bottom: 15px;
+				}
+			}
+			.tab.active-tab {
+				display: block;
+			}
+		}
+		.reviews-container {
+			position: relative;
+			padding-bottom: 1px;
+			.review-box {
+				position: relative;
+				margin-bottom: 30px;
+				padding-left: 120px;
+				min-height: 130px;
+				padding-bottom: 30px;
+				border-bottom: 1px solid #f0f0f0;
+				&:last-child {
+					margin-bottom: 0px;
+					padding-bottom: 0px;
+					border: none;
+				}
+				@include media-breakpoint-down(sm){
+					padding-left: 0;
+				}
+				.rtl & {
+					padding-left: 0;
+					padding-right: 120px;
+					@include media-breakpoint-down(sm){
+						padding-right: 0;
+					}
+				}
+			}
+			.rev-thumb {
+				position: absolute;
+				left: 0px;
+				top: 5px;
+				width: 100px;
+				height: 100px;
+				background: #ffffff;
+				border-radius: 3px;
+				margin-bottom: 20px;
+				@include media-breakpoint-down(sm){
+					position: relative;
+					top: 0;
+				}
+				.rtl & {
+					left: auto;
+					right: 0;
+				}
+				img {
+					display: block;
+					width: 100%;
+					border-radius: 3px;
+				}
+			}
+			.rev-content {
+				position: relative;
+			}
+			.rev-header {
+				position: relative;
+				h4 {
+					float: left;
+					text-transform: uppercase;
+					margin-bottom: 10px;
+					@include media-breakpoint-down(sm){
+						margin-right: 10px;
+						float: none;
+						margin-bottom: 0;
+					}
+					.rtl & {
+						float: right;
+						@include media-breakpoint-down(sm){
+							float: none;
+						}
+					}
+				}
+				.rating {
+					position: relative;
+					float: left;
+					margin-left: 40px;
+					color: var(--theme-color3);
+					line-height: 30px;
+					font-size: 14px;
+					margin-bottom: 10px;
+					.rtl & {
+						float: right;
+						margin-left: 0;
+						margin-right: 40px;
+						@include media-breakpoint-down(sm){
+							float: none;
+							margin-right: 0;
+						}
+					}
+					.fa {
+						margin-right: 3px;
+					}
+					@include media-breakpoint-down(sm){
+						float: none;
+						margin-left: 0;
+						margin-bottom: 0;
+					}
+				}
+				.time {
+					position: relative;
+					float: right;
+					color: var(--theme-color-dark);
+					line-height: 30px;
+					font-size: 14px;
+					@include media-breakpoint-down(sm){
+						float: left;
+					}
+					.dark-layout & {
+						color: var(--theme-color-light);
+					}
+					.rtl & {
+						float: left;
+						@include media-breakpoint-down(sm){
+							float: right;
+						}
+					}
+				}
+			}
+			.rev-option {
+				font-size: 14px;
+				color: var(--theme-color-dark);
+				.dark-layout & {
+					color: var(--theme-color-light);
+				}
+				a {
+					font-size: 14px;
+					text-transform: uppercase;
+					font-weight: 700;
+				}
+			}
+			.rev-text {
+				font-size: 14px;
+				color: var(--theme-color-dark);
+				line-height: 1.8em;
+				margin-bottom: 15px;
+				.dark-layout & {
+					color: var(--theme-color-light);
+				}
+			}
+		}
+		.add-review {
+			position: relative;
+			margin: 30px 0px 0;
+			font-size: 14px;
+			h2 {
+				color: var(--theme-color-dark);
+			}
+			.rating {
+				position: relative;
+				padding-top: 8px;
+				.rate-box {
+					position: relative;
+					display: inline-block;
+					margin-right: 10px;
+					font-size: 14px;
+					color: var(--theme-color-dark);
+					.rtl & {
+						margin-right: 0;
+						margin-left: 10px;
+					}
+					&:hover {
+						color: var(--theme-color3);
+					}
+					&:focus {
+						color: var(--theme-color3);
+					}
+					&:active {
+						color: var(--theme-color3);
+					}
+				}
+			}
+			label {
+				position: relative;
+				display: block;
+				font-size: 14px;
+				margin-bottom: 5px;
+				font-weight: 400;
+				color: var(--theme-color-dark);
+				.dark-layout & {
+					color: var(--theme-color-light);
+				}
+			}
+			h3 {
+				margin-bottom: 20px;
+			}
+			.form-group {
+				position: relative;
+				margin-bottom: 20px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				input[type="text"],
+				input[type="email"],
+				textarea,
+				select {
+					position: relative;
+					display: block;
+					height: 60px;
+					width: 100%;
+					font-size: 15px;
+					color: #666666;
+					line-height: 23px;
+					border-radius: 30px;
+					font-weight: 400;
+					padding: 24px 32px;
+					background-color: var(--theme-color-light);
+					border: 1px solid #DDDDDD;
+					@include transition(all 300ms ease);
+					.dark-layout & {
+						background-color: var(--dark-layout-color-two);
+						border-color: var(--theme-color-light);
+						color: var(--theme-color-light);
+					}
+				}
+				input:focus,
+				select:focus,
+				textarea:focus {
+					border-color: var(--theme-color4);
+					.dark-layout & {
+						border-color: var(--theme-color4);
+					}
+				}
+				textarea {
+					height: 180px;
+					resize: none;
+					padding: 27px 32px;
+					border-radius: 30px;
+				}
+			}
+		}
+	}
+}
+.bootstrap-touchspin {
+	width: 120px !important;
+	.input-group-btn-vertical {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		button {
+			position: relative;
+			@include flex-center;
+			padding: 0 !important;
+			width: 27px !important;
+			height: 27px !important;
+			z-index: 33;
+		}
+	}
+}

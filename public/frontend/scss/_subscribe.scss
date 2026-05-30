@@ -1,0 +1,158 @@
+/***====================================================================
+    Subscribe Section CSS
+====================================================================***/
+
+.subscribe-section {
+    position: relative;
+    padding-top: 30px;
+    @include media-breakpoint-down(sm){
+        padding-top: 0;
+    }
+    .dark-layout & {
+        background-color: var(--dark-layout-color);
+    }
+    .outer-box {
+        position: relative;
+        margin-bottom: -155px;
+        z-index: 4;
+        .content-box {
+            position: relative;
+            padding: 100px 80px;
+            border-radius: 150px 150px;
+            background: linear-gradient(to right,  #1C112F 0%, #5A3695 100%);
+            @include media-breakpoint-down(lg){
+                padding: 80px;
+            }
+            @include media-breakpoint-down(md){
+                padding: 50px 30px;
+                border-radius: 5px;
+            }
+            .rtl & {
+                background: linear-gradient(to left,  #1C112F 0%, #5A3695 100%);
+                @include media-breakpoint-down(md){
+                    border-radius: 5px;
+                }
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                top: -30px;
+                right: -20px;
+                width: 100%;
+                height: 100%;
+                border-radius: 150px;
+                background-color: var(--theme-color1);
+                z-index: -1;
+                @include media-breakpoint-down(md){
+                    display: none;
+                }
+                .rtl & {
+                    right: auto;
+                    left: -20px;
+                    transform: scaleX(-1);
+                }
+            }
+            .shape-ten {
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 150px 0 0 150px;
+                @include media-breakpoint-down(lg){
+                    display: none;
+                }
+                .rtl & {
+                    right: 0;
+                    left: auto;
+                    transform: scaleX(-1);
+                }
+            }
+        }
+        .content-column {
+            .inner-column {
+                @include media-breakpoint-down(xl){
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                .sub-title {
+                    position: relative;
+                    font-size: 20px;
+                    color: var(--theme-color-light);
+                }
+                .title {
+                    color: var(--theme-color-light);
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .form-column {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            justify-content: center;
+            @include media-breakpoint-down(xl){
+                align-items: center;
+            }
+            @include media-breakpoint-down(sm){
+                align-items: center;
+            }
+            .inner-column {
+                position: relative;
+                @include media-breakpoint-down(sm){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+.subscribe-form {
+    position: relative;
+    .form-group {
+        position: relative;
+        width: 623px;
+        display: flex;
+        align-items: flex-end;
+        gap: 45px;
+        @include media-breakpoint-down(md){
+            width: 100%;
+        }
+        @include media-breakpoint-down(sm){
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+    }
+    .select2-container--default .select2-selection--single,
+    input:not([type="submit"]),
+    textarea,
+    select {
+        position: relative;
+        display: block;
+        height: 50px;
+        width: 100%;
+        padding: 20px 20px;
+        padding-left: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--theme-color-light);
+        border-bottom: 2px solid rgb(255, 255, 255, 0.10);
+        background-color: transparent;
+        margin-bottom: 0;
+        @include transition(all 300ms ease);
+    }
+    ::-webkit-input-placeholder {color: var(--theme-color-light);}
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-color: var(--theme-color1);
+    }
+    button {
+        flex-shrink: 0;
+        padding: 22px 49px;
+        @include media-breakpoint-down(sm){
+            padding: 18px 30px;
+        }
+    }
+}

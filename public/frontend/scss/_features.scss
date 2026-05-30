@@ -1,0 +1,586 @@
+/***
+
+====================================================================
+    Features Section CSS
+====================================================================***/
+
+.features-section {
+    position: relative;
+    padding: 120px 0;
+    background-color: #FFF8CC;
+    .sec-title {
+        .dark-layout & {
+            .sub-title,
+            h2 {
+                color: var(--theme-color-dark);
+            }
+        }
+    }
+    .shape-one {
+        position: absolute;
+        top: 84px;
+        right: 72px;
+        @include media-breakpoint-down(xl){display: none;}
+        .rtl & {
+            right: auto;
+            left: 72px;
+            transform: scaleX(-1);
+        }
+    }
+    .shape-two {
+        position: absolute;
+        top: 106px;
+        left: 44px;
+        animation: fa-spin 20s infinite linear;
+        @include media-breakpoint-down(xl){display: none;}
+        .rtl & {
+            left: auto;
+            right: 44px;
+            transform: scaleX(-1);
+        }
+    }
+    .row {
+        margin: 0;
+        .feature-block {
+            padding: 0;
+            @include media-breakpoint-down(lg){
+                padding: 0 15px;
+            }
+            @include media-breakpoint-down(sm){
+                padding: 0;
+            }
+        }
+    }
+}
+
+.feature-block {
+    margin-bottom: 30px;
+    @include media-breakpoint-down(sm){
+        margin-bottom: 15px;
+    }
+
+    .inner-box {
+        position: relative;
+        padding: 59px 56px;
+        border-radius: 20px;
+        overflow: hidden;
+        @include background;
+        background-color: var(--theme-color-light);
+        background-image: url(../images/icons/feature-bg.png);
+        @include transition(all 300ms ease);
+        z-index: 3;
+        @include media-breakpoint-down(xxl){
+            padding: 40px 25px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0%;
+            height: 100%;
+            z-index: 2;
+            background-image: url(../images/icons/feature-hover-bg.png);
+            @include background;
+            @include transition(all 300ms ease);
+            .rtl & {
+                transform: scaleX(-1);
+                left: 0;
+                right: auto;
+            }
+        }
+        &:after {
+            content: "";
+            @include absolute;
+            @include overlay;
+            opacity: 0;
+            background-color: var(--theme-color-light);
+            @include transition(all 300ms ease);
+        }
+        &.active{
+            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+            &::before {
+                width: 100%;
+            }
+            &::after {
+                opacity: 1;
+            }
+            .icon {
+                transform: scaleX(-1);
+            }
+            .read-more {
+                span {
+                    width: 90px;
+                }
+            }
+        }
+        .icon {
+            position: relative;
+            font-size: 72px;
+            display: inline-block;
+            color: var(--theme-color1);
+            margin-bottom: 30px;
+            @include transition(all 300ms ease);
+            z-index: 2;
+            @include media-breakpoint-down(xl){
+                font-size: 60px;
+            }
+        }
+        .content {
+            position: relative;
+            z-index: 3;
+        }
+        .title {
+            position: relative;
+            margin-bottom: 20px;
+            color: var(--theme-color-dark);
+        }
+        .text {
+            position: relative;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 20px;
+            padding-right: 20px;
+            @include transition(all 300ms ease);
+            .rtl & {
+                padding-right: 0;
+                padding-left: 20px;
+            }
+        }
+        .read-more {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 700;
+            color: #5A3695;
+            span {
+                position: relative;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 0;
+                @include transition(all 300ms ease);
+            }
+            i {
+                .rtl & {
+                    transform: scaleX(-1);
+                }
+            }
+        }
+    }
+}
+
+/***
+
+====================================================================
+    Features Section Two
+====================================================================***/
+
+.feature-section-two {
+    position: relative;
+    padding: 120px 0 90px;
+}
+
+.feature-block-two {
+    margin-bottom: 30px;
+    .inner-box {
+        position: relative;
+        padding: 45px 45px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        background-color: #F5F5F5;
+        @include transition(all 300ms ease);
+        z-index: 3;
+        @include media-breakpoint-down(sm){
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 30px 25px;
+        }
+        .dark-layout & {
+            background-color: #333333;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 135px;
+            height: 203px;
+            background-image: url(../images/icons/feature2-shape.png);
+            @include background;
+            z-index: 3;
+            .rtl & {
+                right: auto;
+                left: 0;
+                transform: scaleX(-1);
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(to bottom,  #7906D2 0%,#3E036C 50%, #5C05A0 100%);
+            @include transition(all 500ms ease);
+            .rtl & {
+                right: auto;
+                left: 0;
+                background: linear-gradient(to top,  #7906D2 0%,#3E036C 50%, #5C05A0 100%);
+            }
+        }
+        &.active {
+            border-top-right-radius: 20px;
+            &:after {
+                width: 100%;
+            }
+            .icon-box {
+                border-color: rgb(255, 255, 255, 0.1);
+                .icon {
+                    transform: scaleX(-1);
+                    color: var(--theme-color-light);
+                }
+                .icon-seven {opacity: 0;}
+                .icon-eight {opacity: 1;}
+            }
+            .read-more span {width: 90px;}
+            .title,
+            .text,
+            .read-more {
+                color: var(--theme-color-light);
+            }
+        }
+        .icon-box {
+            position: relative;
+            width: 116px;
+            height: 116px;
+            border-radius: 50%;
+            @include flex-center;
+            flex-shrink: 0;
+            z-index: 3;
+            @include media-breakpoint-down(sm){
+                width: 100px;
+                height: 100px;
+            }
+            .icon {
+                position: relative;
+                font-size: 72px;
+                line-height: 1em;
+                color: var(--theme-color4);
+                @include transition(all 300ms ease);
+                @include media-breakpoint-down(sm){
+                    font-size: 50px;
+                }
+            }
+            .icon-seven {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -62px;
+                margin-left: -59.5px;
+                animation: fa-spin 15s linear infinite;
+                @include transition(all 300ms ease);
+                .rtl & {
+                    transform: scaleX(-1);
+                }
+            }
+            .icon-eight {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -62px;
+                margin-left: -59.5px;
+                animation: fa-spin 15s linear infinite;
+                opacity: 0;
+                @include transition(all 300ms ease);
+                .rtl & {
+                    right: -9px;
+                    left: auto;
+                    transform: scaleX(-1);
+                }
+            }
+        }
+        .content {
+            position: relative;
+            z-index: 3;
+        }
+        .title {
+            position: relative;
+            margin-bottom: 15px;
+            @include transition(all 300ms ease);
+        }
+        .text {
+            position: relative;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 12px;
+            max-width: 300px;
+            @include transition(all 300ms ease);
+            .dark-layout & {
+                color: var(--theme-color-light);
+            }
+        }
+        .read-more {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 700;
+            color: #5A3695;
+            @include transition(all 0ms ease);
+            i:before {
+                .rtl & {
+                    display: inline-block;
+                    transform: scaleX(-1);
+                }
+            }
+            .dark-layout & {
+                color: var(--theme-color-light);
+            }
+            span {
+                position: relative;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 0;
+                @include transition(all 300ms ease);
+            }
+        }
+    }
+}
+
+/***
+
+====================================================================
+    Features Section Three
+====================================================================***/
+
+.feature-section-three {
+    position: relative;
+    padding: 120px 0 90px;
+    background-color: #F5F5F5;
+    .dark-layout & {
+        background-color: var(--dark-layout-color);
+    }
+    .large-container {
+        max-width: 1550px;
+    }
+}
+
+.feature-block-three {
+    margin-bottom: 30px;
+    .inner-box {
+        position: relative;
+        padding: 20px 25px 60px 38px;
+        max-width: 350px;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include media-breakpoint-down(xxl){
+            padding: 20px 25px 60px;
+        }
+        @include media-breakpoint-down(md){
+            margin: 0 auto;
+            padding: 20px 15px 40px;
+        }
+        @include media-breakpoint-down(sm){
+            min-height: 420px;
+        }
+        .rtl & {
+            padding: 20px 38px 60px 25px;
+            @include media-breakpoint-down(xxl){
+                padding: 20px 25px 60px;
+            }
+            @include media-breakpoint-down(md){
+                padding: 20px 15px 40px;
+            }
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            @include background;
+            background-size: 100% 100%;
+            background-image: url(../images/icons/feature3-bg.png);
+            z-index: 2;
+            @include media-breakpoint-down(sm){
+                height: 420px;
+            }
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            transform: scale(0.8);
+            opacity: 0;
+            pointer-events: none;
+            transform-origin: bottom right;
+            @include background;
+            background-size: 100% 100%;
+            background-image: url(../images/icons/feature3-hover-bg.png);
+            @include transition(all 300ms ease);
+            z-index: 2;
+            @include media-breakpoint-down(sm){
+                height: 420px;
+            }
+        }
+        &.active {
+            &:after {
+                transform: scale(1);
+                opacity: 1;
+            }
+            .icon-box {
+                .icon {
+                    color: var(--theme-color-light);
+                    opacity: 1;
+                    transform: scaleX(-1);
+                    font-size: 75px;
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+            .content {
+                .title,
+                .text {
+                    color: var(--theme-color-light);
+                }
+            }
+            .read-more {
+                color: var(--theme-color-light);
+                &:before {
+                    transform: scale(1);
+                }
+            }
+        }
+        .icon-box {
+            position: relative;
+            text-align: right;
+            z-index: 3;
+            .icon {
+                position: relative;
+                color: var(--theme-color-dark);
+                font-size: 90px;
+                opacity: 0.2;
+                width: 137px;
+                height: 137px;
+                @include flex-center;
+                margin-left: auto;
+                background-color: transparent;
+                border-radius: 50%;
+                line-height: 1em;
+                @include transition(all 300ms ease);
+                @include media-breakpoint-down(md){
+                    font-size: 70px;
+                    width: 120px;
+                    height: 120px;
+                }
+                &:before {
+                    position: relative;
+                    z-index: 3;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    @include background;
+                    animation: fa-spin 10s infinite linear;
+                    background-image: url(../images/icons/feature-icon-bg.png);
+                    @include transition(all 300ms ease);
+                    z-index: 2;
+                }
+            }
+        }
+        .content {
+            position: relative;
+            z-index: 3;
+            .title {
+                position: relative;
+                font-weight: 500;
+                max-width: 227px;
+                color: var(--theme-color-dark);
+                margin-bottom: 18px;
+                @include media-breakpoint-down(md){
+                    max-width: 100%;
+                    font-size: 30px;
+                }
+            }
+            .text {
+                position: relative;
+                margin-bottom: 0;
+                @include transition(all 300ms ease);
+            }
+        }
+        .read-more {
+            position: absolute;
+            top: -14px;
+            left: 0;
+            width: 70px;
+            height: 70px;
+            @include flex-center;
+            font-size: 24px;
+            border-radius: 20px;
+            color: #3A0195;
+            background-color: var(--theme-color-light);
+            z-index: 3;
+            @include transition(all 300ms ease);
+            @include media-breakpoint-down(xxl){
+                left: -10px;
+            }
+            @include media-breakpoint-down(md){
+                top: -10px;
+                left: -12px;
+            }
+            @include media-breakpoint-down(sm){
+                width: 55px;
+                height: 55px;
+                font-size: 18px;
+                top: -3px;
+                left: 0;
+            }
+            .icon {
+                position: relative;
+                z-index: 1;
+                &:before {
+                    .rtl & {
+                        display: block;
+                        transform: scaleX(-1);
+                    }
+                }
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                transform: scale(0);
+                transform-origin: bottom right;
+                background-color: var(--theme-color4);
+                @include transition(all 500ms ease);
+                .rtl & {
+                    transform-origin: left bottom;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.main-menu .navigation > li.current > a {
+    color: #ffffff !important;
+    position: relative;
+}
+
+.main-menu .navigation > li.current > a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+}

@@ -1,0 +1,123 @@
+/***====================================================================
+      Mega Menu CSS
+====================================================================***/
+
+.main-header {
+    .navigation > li.has-mega-menu{
+	    position:static;
+        @include media-breakpoint-down(lg){
+            position: relative !important;
+        }
+    }
+    .navigation > li > .mega-menu{
+        position:absolute;
+        width:100%;
+        max-width: 100%;
+        min-width: 100%;
+        background-color: var(--theme-color-light);
+        padding: 30px 35px 25px;
+        top: 100%;
+        left: 0;
+        z-index:100;
+        margin-top: 20px;
+        opacity: 0;
+        display: none;
+        box-shadow:2px 2px 5px 1px rgba(0,0,0,0.05),-2px 0px 5px 1px rgba(0,0,0,0.05);
+        .dark-layout & {
+            background-color: var(--dark-layout-color);
+        }
+        @include media-breakpoint-down(lg){
+            position: relative;
+            display: none;
+            opacity: 1;
+            visibility: visible;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            border-radius: 0px;
+            transition: none !important;
+            box-shadow: none;
+            position: relative;
+            width: 100%;
+            padding: 0px !important;
+            background: none !important;
+            margin: 0px !important;
+            left: 0px !important;
+            top: 0px !important;
+        }
+    }
+    .navigation > li:hover > .mega-menu{
+        margin-top: 0;
+        opacity: 1;
+        visibility: visible;
+        transition:all 200ms ease;
+    }
+    .navigation > li > .mega-menu .mega-menu-bar{
+        position: relative;
+         h3{
+            position:relative;
+            color:var(--theme-color-dark);
+        }
+        ul{
+            position:relative;
+            margin-bottom: -1px;
+            > li{
+                position:relative;
+                width:100%;
+                border-bottom:1px solid #ebf1f5;
+                transition:all 500ms ease;
+                .dark-layout & {
+                    border-color: #838586;
+                }
+            }
+        }
+        .column{
+            position:relative;
+            margin-bottom:10px;
+            @include media-breakpoint-down(lg){margin-bottom: 0;}
+            > ul > li{&:last-child{border:none;}}
+        }
+        .column > ul > li{
+            @include media-breakpoint-down(lg){
+                padding-left: 20px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+                &:first-child{border-top: 1px solid rgba(255, 255, 255, 0.10);};
+                &:last-child{border-bottom: 1px solid rgba(255, 255, 255, 0.10);};
+            }
+            > a{
+                position: relative;
+                display: block;
+                padding: 10px 0px;
+                line-height: 29px;
+                font-weight: 400;
+                font-size: 16px;
+                color: var(--theme-color-dark);
+                text-align: left;
+                text-transform: capitalize;
+                @include transition(all 300ms ease);
+                .rtl & {
+                    text-align: right;
+                }
+                &:hover{
+                    color: var(--theme-color1);
+                }
+                .dark-layout & {
+                    color: var(--theme-color-light);
+                    &:hover{
+                        color: var(--theme-color1);
+                    }
+                }
+                @include media-breakpoint-down(lg){
+                    position: relative;
+                    display: block;
+                    line-height: 24px;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+

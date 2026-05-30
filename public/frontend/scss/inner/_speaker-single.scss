@@ -1,0 +1,213 @@
+/***====================================================================
+    Speaker Single CSS
+====================================================================***/
+
+.speaker-single {
+    position: relative;
+    padding: 120px 0;
+    .outer-box.two {
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+    .content-column {
+        .inner-column {
+            .content-box {
+                .designation {
+                    position: relative;
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: var(--theme-color4);
+                    margin-bottom: 15px;
+                    @include media-breakpoint-down(sm){
+                        font-size: 18px;
+                    }
+                }
+                .name {
+                    @include media-breakpoint-down(sm){
+                        font-size: 38px;
+                    }
+                }
+                .text {
+                    position: relative;
+                    margin-bottom: 20px;
+                    .dark-layout & {
+                        color: var(--theme-color-light);
+                    }
+                }
+            }
+            .author-box {
+                position: relative;
+                border-top: 1px solid #BBBBBB;
+                padding-top: 30px;
+                margin-top: 20px;
+                .author-info {
+                    position: relative;
+                    margin-bottom: 20px;
+                    .title {
+                        margin-bottom: 3px;
+                    }
+                    .text {
+                        .dark-layout & {
+                            color: var(--theme-color-light);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .biography-column {
+        .inner-column {
+            position: relative;
+            .title {
+                @include media-breakpoint-down(sm){
+                    font-size: 36px;
+                }
+            }
+            .text {
+                margin-bottom: 20px;
+                .dark-layout & {
+                    color: var(--theme-color-light);
+                }
+            }
+        }
+    }
+
+    .skills-column {
+        .inner-column {
+            position: relative;
+            .title {
+                @include media-breakpoint-down(sm){
+                    font-size: 36px;
+                }
+            }
+            .text {
+                margin-bottom: 20px;
+                .dark-layout & {
+                    color: var(--theme-color-light);
+                }
+            }
+        }
+    }
+}
+
+.speaker-single-block {
+    margin-bottom: 30px;
+    .inner-box {
+        position: relative;
+        padding: 0px 10px;
+        @include media-breakpoint-down(sm){
+            padding: 0;
+        }
+        &:hover {
+            .image img {transform: scale(1.1);}
+        }
+        .image {
+            position: relative;
+            margin-bottom: 0;
+            border-radius: 15px;
+            overflow: hidden;
+            img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                @include transition(all 300ms ease);
+            }
+        }
+        .content-box {
+            position: relative;
+            padding: 10px 10px 30px;
+            text-align: center;
+            @include transition(all 300ms ease);
+            @include media-breakpoint-down(sm){
+                padding-bottom: 50px;
+                padding-top: 0;
+            }
+            .team-shape{
+                position: absolute;
+                left: -10px;
+                right: -10px;
+                bottom: 0;
+                height: 203px;
+                filter: drop-shadow( 0 0px 10px rgba(0, 0, 0, 0.15));
+                border-radius: 12px;
+                @include transition(all 300ms ease);
+                svg {
+                    @include media-breakpoint-down(xxl){
+                        width: 100%;
+                    }
+                }
+            }
+            .shape-thirtynine {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                @include transition(all 300ms ease);
+            }
+            .name {
+                position: relative;
+                color: var(--theme-color-light);
+                line-height: 1em;
+                margin-bottom: 2px;
+                z-index: 3;
+            }
+            .designation {
+                position: relative;
+                color: var(--theme-color-light);
+                font-size: 14px;
+                line-height: 24px;
+                z-index: 3;
+                @include transition(all 300ms ease);
+            }
+            .social-icons {
+                position: absolute;
+                top: -85px;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 30px;
+                @include transition(all 300ms ease);
+                @include media-breakpoint-down(sm){
+                    gap: 13px;
+                    top: -50px;
+                }
+                li {
+                    &:nth-child(2) {
+                        margin-top: -42px;
+                  }
+                    &:nth-child(4) {
+                        margin-top: -42px;
+                    }
+                    &:nth-child(3) {
+                        margin-top: -65px;
+                    }
+                    a {
+                        position: relative;
+                        width: 45px;
+                        height: 45px;
+                        @include flex-center;
+                        color: var(--theme-color-light);
+                        font-size: 16px;
+                        border-radius: 50%;
+                        background-color: var(--theme-color3);
+                        @include transition(all 300ms ease);
+                        &:hover {
+                            background-color: var(--theme-color-light);
+                            color: var(--theme-color3);
+                       }
+                       @include media-breakpoint-down(sm){
+                           width: 40px;
+                           height: 40px;
+                           font-size: 14px;
+                       }
+                   }
+                }
+            }
+        }
+    }
+}

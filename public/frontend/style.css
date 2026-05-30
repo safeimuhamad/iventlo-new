@@ -1,0 +1,684 @@
+
+/***====================================================================
+Template Name: Konfer | Event & Conference HTML Template  
+Author:        https://themeforest.net/user/expert-themes
+Description:   Description
+Version:       1.1  
+License:       Copyright Commercial  
+Primary use:   Event & Conference 
+Tags:          event, conference, marketing, business
+====================================================================***/
+
+/* Iventlo public copy uses sentence case outside the main page H1. */
+.main-menu .navigation > li > a,
+.mobile-menu .navigation li > a,
+.breadcrumb-marquee .title-two,
+.sec-title .sub-title,
+.sub-title,
+.theme-btn .btn-title,
+.btn-title,
+.category,
+.cat,
+.counter-title,
+.sidebar-title,
+.widget-title,
+.member-label,
+.member-submit,
+.member-action,
+.member-event-action,
+.read-more,
+.contact-list-one .title,
+.popular-tags a,
+.cat-list a {
+  text-transform: none !important;
+}
+
+/* Give the simplified public header menu more breathing room. */
+.header-style-one .main-box .nav-outer .navigation {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.header-style-one .main-box .nav-outer .navigation > li {
+  margin-right: 0 !important;
+}
+
+/* Keep homepage slider CTA below the copy for a cleaner hero composition. */
+.banner-section.style-two .content-box .location-box {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  padding-left: 10px;
+}
+
+.banner-section.style-two .content-box .location-box .text {
+  max-width: 760px;
+}
+
+.banner-section.style-two .content-box .location-box .btn-box {
+  margin-top: 0;
+}
+
+.banner-section.style-two .banner-slide-secondary .content-box {
+  max-width: 1080px;
+}
+
+.banner-section.style-two .banner-slide-secondary .content-box .title {
+  max-width: 920px;
+  margin-bottom: 28px;
+  font-size: 96px;
+  line-height: 1.08;
+}
+
+.banner-section.style-two .banner-slide-secondary .content-box .location-box {
+  gap: 22px;
+}
+
+.banner-section.style-two .banner-slide-secondary .content-box .location-box .text {
+  max-width: 700px;
+  font-size: 19px;
+  line-height: 34px;
+}
+
+@media (max-width: 1199.98px) {
+  .banner-section.style-two .content-box .location-box {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .banner-section.style-two .banner-slide-secondary .content-box {
+    max-width: 100%;
+  }
+
+  .banner-section.style-two .banner-slide-secondary .content-box .title {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 76px;
+  }
+
+  .banner-section.style-two .banner-slide-secondary .content-box .location-box .text {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .banner-section.style-two .banner-slide-secondary .content-box .title {
+    font-size: 56px;
+    line-height: 1.12;
+  }
+
+  .banner-section.style-two .banner-slide-secondary .content-box .location-box {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .banner-section.style-two .banner-slide-secondary .content-box .title {
+    font-size: 42px;
+  }
+
+  .banner-section.style-two .banner-slide-secondary .content-box .location-box .text {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+
+/* Keep public service cards visually aligned when titles/descriptions wrap. */
+.feature-section-three .row {
+  align-items: stretch;
+}
+
+.feature-section-three .feature-block-three {
+  display: flex;
+}
+
+.feature-section-three .feature-block-three .inner-box {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 52px;
+  min-height: 520px;
+}
+
+.feature-section-three .feature-block-three .inner-box .icon-box {
+  margin-bottom: 34px;
+  text-align: left;
+}
+
+.feature-section-three .feature-block-three .inner-box .icon-box .icon {
+  width: 112px;
+  height: 112px;
+  margin-left: 0;
+  font-size: 76px;
+}
+
+.feature-section-three .feature-block-three .inner-box .content {
+  margin-top: -46px;
+}
+
+.feature-section-three .feature-block-three .inner-box .content .title {
+  max-width: 260px;
+}
+
+.feature-section-three .feature-block-three .inner-box:before,
+.feature-section-three .feature-block-three .inner-box:after {
+  height: 100%;
+  min-height: 520px;
+}
+
+@media (max-width: 575.98px) {
+  .feature-section-three .feature-block-three .inner-box:before,
+  .feature-section-three .feature-block-three .inner-box:after {
+    min-height: 420px;
+  }
+
+  .feature-section-three .feature-block-three .inner-box {
+    padding-top: 42px;
+  }
+
+  .feature-section-three .feature-block-three .inner-box .icon-box {
+    margin-bottom: 24px;
+  }
+
+  .feature-section-three .feature-block-three .inner-box .icon-box .icon {
+    width: 92px;
+    height: 92px;
+    font-size: 62px;
+  }
+}
+
+/* Public service detail polish. */
+.service-detail-page {
+  padding-top: 90px;
+  padding-bottom: 110px;
+}
+
+.service-detail-page .image-box {
+  margin-bottom: 46px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 24px 70px rgba(20, 27, 52, 0.12);
+}
+
+.service-detail-page .image-box img {
+  display: block;
+  width: 100%;
+  max-height: 560px;
+  object-fit: cover;
+}
+
+.service-detail-page .content-box {
+  max-width: 1180px;
+  margin: 0;
+  text-align: left;
+}
+
+.service-detail-page .content-box h2 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.service-detail-page .lead-text {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #4f5566;
+}
+
+.service-detail-page .text {
+  max-width: 1040px;
+  text-align: left;
+}
+
+.service-detail-page .text p {
+  text-align: left;
+}
+
+.service-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  margin-top: 36px;
+}
+
+.service-detail-card,
+.service-detail-note {
+  position: relative;
+  padding: 32px 34px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 18px 55px rgba(20, 27, 52, 0.08);
+}
+
+.service-detail-card h3,
+.service-detail-note h3 {
+  margin-bottom: 18px;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.service-detail-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-detail-card li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 13px;
+  line-height: 1.7;
+  color: #606675;
+}
+
+.service-detail-card li:last-child {
+  margin-bottom: 0;
+}
+
+.service-detail-card li:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--theme-color4);
+}
+
+.service-detail-note {
+  margin-top: 28px;
+  background: linear-gradient(135deg, rgba(246, 233, 255, 0.95), rgba(255, 255, 255, 0.98));
+}
+
+.service-detail-note p {
+  margin-bottom: 0;
+  line-height: 1.8;
+  color: #5f6677;
+  text-align: left;
+}
+
+.service-detail-note-light {
+  background: #fff;
+}
+
+.service-detail-checklist {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 24px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-detail-checklist li {
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.7;
+  color: #5f6677;
+  text-align: left;
+}
+
+.service-detail-checklist li:before {
+  content: "\f00c";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 900;
+  color: var(--theme-color4);
+}
+
+@media (max-width: 991.98px) {
+  .service-detail-page {
+    padding-top: 70px;
+  }
+
+  .service-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-detail-checklist {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service-detail-page {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  .service-detail-page .image-box {
+    border-radius: 18px;
+    margin-bottom: 32px;
+  }
+
+  .service-detail-card,
+  .service-detail-note {
+    padding: 26px 22px;
+  }
+}
+
+/* Public article detail polish. */
+.article-detail-page {
+  padding-top: 92px;
+  padding-bottom: 110px;
+}
+
+.article-detail-page .news-single-block .image-box {
+  margin-bottom: 42px;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 24px 70px rgba(20, 27, 52, 0.12);
+}
+
+.article-detail-page .news-single-block .image-box img {
+  display: block;
+  width: 100%;
+  max-height: 560px;
+  object-fit: cover;
+}
+
+.article-detail-page .content-box,
+.article-detail-page .content-box .title,
+.article-detail-page .text,
+.article-detail-page .text p,
+.article-detail-page .text li,
+.article-detail-page .text h2,
+.article-detail-page .text h3 {
+  text-align: left;
+}
+
+.article-detail-page .content-box .title {
+  margin-bottom: 22px;
+  line-height: 1.15;
+  color: #111827;
+}
+
+.article-detail-page .text {
+  color: #5f6677;
+}
+
+.article-detail-page .article-excerpt {
+  margin-bottom: 34px;
+  padding: 26px 30px;
+  border-left: 5px solid #cc148a;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(204, 20, 138, 0.08), rgba(37, 99, 235, 0.06));
+  color: #33394a;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.article-rich-content {
+  padding-top: 6px;
+}
+
+.article-detail-page .text p,
+.article-detail-page .text li {
+  font-size: 18px;
+  line-height: 1.95;
+  color: #4d5567;
+}
+
+.article-detail-page .text p {
+  margin-bottom: 24px;
+}
+
+.article-detail-page .text h2,
+.article-detail-page .text h3 {
+  position: relative;
+  margin-top: 48px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.article-detail-page .text h2::after,
+.article-detail-page .text h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 74px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #cc148a, #2563eb);
+}
+
+.article-detail-page .text ul,
+.article-detail-page .text ol {
+  margin: 0 0 30px;
+  padding: 28px 34px 28px 54px;
+  border: 1px solid rgba(204, 20, 138, 0.12);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 18px 44px rgba(20, 27, 52, 0.08);
+}
+
+.article-detail-page .text li {
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+
+.article-detail-page .text li:last-child {
+  margin-bottom: 0;
+}
+
+.article-detail-page .text blockquote {
+  position: relative;
+  margin: 34px 0 40px;
+  padding: 34px 38px 34px 42px;
+  border-left: 0;
+  border-radius: 8px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.55;
+  box-shadow: 0 24px 60px rgba(17, 24, 39, 0.18);
+}
+
+.article-detail-page .text blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 24px;
+  bottom: 24px;
+  width: 5px;
+  border-radius: 999px;
+  background: #cc148a;
+}
+
+.article-detail-page .post-meta-box {
+  margin-bottom: 22px;
+}
+
+.article-cta-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 54px;
+  padding: 34px 38px;
+  border-radius: 8px;
+  background: #f7f8fc;
+  border: 1px solid #eceef6;
+}
+
+.article-cta-box h3 {
+  margin-bottom: 10px;
+  color: #111827;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.article-cta-box p {
+  margin-bottom: 0;
+  color: #5f6677;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.article-cta-box .theme-btn {
+  flex: 0 0 auto;
+}
+
+.blog-pagination {
+  margin-top: 18px;
+  margin-bottom: 36px;
+}
+
+.blog-pagination ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-pagination a,
+.blog-pagination span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 46px;
+  height: 46px;
+  padding: 0 14px;
+  border: 1px solid rgba(204, 20, 138, 0.18);
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1f2433;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 10px 28px rgba(20, 27, 52, 0.06);
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.blog-pagination a:hover,
+.blog-pagination .active a {
+  border-color: #cc148a;
+  background: #cc148a;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.blog-pagination .disabled a,
+.blog-pagination .dots span {
+  pointer-events: none;
+  color: #9aa0ad;
+  background: #f7f7fb;
+  border-color: #ececf3;
+  box-shadow: none;
+}
+
+@media (max-width: 991.98px) {
+  .article-detail-page {
+    padding-top: 72px;
+  }
+
+  .article-cta-box {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .article-detail-page {
+    padding-top: 52px;
+    padding-bottom: 80px;
+  }
+
+  .article-detail-page .news-single-block .image-box {
+    margin-bottom: 32px;
+    border-radius: 18px;
+  }
+
+  .article-detail-page .article-excerpt,
+  .article-detail-page .text ul,
+  .article-detail-page .text ol,
+  .article-detail-page .text blockquote,
+  .article-cta-box {
+    padding: 24px 22px;
+  }
+
+  .article-detail-page .text ul,
+  .article-detail-page .text ol {
+    padding-left: 42px;
+  }
+
+  .article-detail-page .text p,
+  .article-detail-page .text li {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  .article-detail-page .text blockquote {
+    font-size: 18px;
+  }
+}
+
+.iventlo-whatsapp-float {
+  position: fixed;
+  right: 32px;
+  bottom: 98px;
+  z-index: 999;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 58px;
+  padding: 14px 26px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #cc148a 0%, #8c1bb7 100%);
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 18px 40px rgba(140, 27, 183, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.iventlo-whatsapp-float i {
+  font-size: 24px;
+}
+
+.iventlo-whatsapp-float:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 24px 50px rgba(140, 27, 183, 0.36);
+}
+
+@media (max-width: 767.98px) {
+  .iventlo-whatsapp-float {
+    right: 18px;
+    bottom: 86px;
+    min-height: 52px;
+    padding: 13px 18px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .iventlo-whatsapp-float span {
+    display: none;
+  }
+
+  .iventlo-whatsapp-float {
+    width: 54px;
+    height: 54px;
+    justify-content: center;
+    padding: 0;
+  }
+}
+

@@ -1,0 +1,132 @@
+/***====================================================================
+    Section Title CSS
+====================================================================***/
+
+.sec-title {
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 1;
+    @include media-breakpoint-down(lg){
+        br {display: none;}
+    }
+    .dark-layout & {
+        .sub-title,
+        .section-title,
+        .text {
+            color: var(--theme-color-light);
+        }
+    }
+    .sub-title {
+        position: relative;
+        display: inline-block;
+        font-size: var(--sec-title-subtitle-font-size);
+        line-height: var(--sec-title-subtitle-line-height);
+        font-weight: var(--sec-title-subtitle-font-weight);
+        font-family: var(--sec-title-subtitle-font-family);
+        color: var(--sec-title-subtitle-color);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        &:before {
+            position: absolute;
+            top: 4px;
+            left: -17px;
+            font-size: 16px;
+            line-height: 1em;
+            font-weight: 400;
+            font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+            content: "\f130";
+            display: none;
+            .rtl & {
+                left: auto;
+                right: -17px;
+            }
+        }
+        &:after {
+            position: absolute;
+            top: 4px;
+            right: -17px;
+            font-size: 16px;
+            line-height: 1em;
+            font-weight: 400;
+            font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+            content: "\f130";
+            .rtl & {
+                right: auto;
+                left: -17px;
+            }
+        }
+    }
+    h1{
+        position: relative;
+        font-size: var(--h1-font-size);
+        line-height: 1.2em;
+        margin-bottom: 0;
+        @include media-breakpoint-down(xl) {
+            font-size: 84px;
+        }
+        @include media-breakpoint-down(lg){
+            font-size: 72px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 68px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 54px;
+        }
+    }
+    
+    h2 {
+        position: relative;
+        font-size: var(--sec-title-font-size);
+        color: var(--sec-title-color);
+        font-family: var(--sec-title-font-family);
+        font-weight: var(--sec-title-font-weight);
+        margin-bottom: 0;
+        line-height: 1.1em;
+        z-index: 2;
+        @include media-breakpoint-down(sm){
+            font-size: 40px;
+            br{display: none;}
+        }
+    }
+    .text {
+        margin-top: 20px;
+    }
+
+    &.light{
+        .sub-title {
+            color: var(--theme-color-light);
+            &:before {
+                color: var(--theme-color-light);
+            }
+        }
+        .text{
+            color: var(--theme-color-light);
+        }
+        h2,
+        h1{
+            color: var(--theme-color-light);
+        }
+    }
+    &.orange .sub-title {
+        color: var(--theme-color4);
+        &:before,
+        &:after {
+            color: var(--theme-color4);
+        }
+    }
+    &.yellow .sub-title {
+        color: var(--theme-color2);
+        &:before,
+        &:after {
+            color: var(--theme-color2);
+        }
+    }
+    &.text-center {
+        .sub-title {
+            &:before {
+                display: block;
+            }
+        }
+    }
+}
